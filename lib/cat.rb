@@ -16,9 +16,6 @@ class Cat
     @@all
   end
 
-  def self.all
-    @@all
-  end
 
 
   
