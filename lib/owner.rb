@@ -20,11 +20,11 @@ class Owner
   end
 
   def self.count
-    self.all.length
+    all.length
   end
 
   def self.reset_all
-    self.all.clear
+    all.clear
   end
 
   def cats
@@ -45,16 +45,16 @@ class Owner
   end
 
   def walk_dogs
-    self.dogs.map {|dog| dog.mood = "happy"}
+    dogs.map {|dog| dog.mood = "happy"}
   end
 
   def feed_cats
-    self.cats.map {|cat| cat.mood = "happy"}
+    cats.map {|cat| cat.mood = "happy"}
   end
 
   def sell_pets
-    self.cats.map {|cat| cat.mood = "nervous"; cat.owner = nil}
-    self.dogs.map {|dog| dog.mood = "nervous"; dog.owner = nil}
+    cats.map {|cat| cat.mood = "nervous"; cat.owner = nil}
+    dogs.map {|dog| dog.mood = "nervous"; dog.owner = nil}
   end
 
   def list_pets
